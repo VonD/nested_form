@@ -57,9 +57,9 @@ module NestedForm
     end
 
     def fields_for_nested_model(name, object, options, block)
-      output = '<div class="fields">'.html_safe
+      output = '<table class="fields">'.html_safe
       output << super
-      output.safe_concat('</div>')
+      output.safe_concat('</table>')
       output
     end
   end
